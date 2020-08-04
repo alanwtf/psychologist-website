@@ -44,8 +44,9 @@ ul{
     display: flex;
     justify-content: space-evenly;
     background-color: #f5f3f3;
-    height: 50px;
-    font-size: 1.5em;
+    height: 80px;
+    font-size: 1.3em;
+    align-items: center
 }
 
 .expand-more{
@@ -64,12 +65,13 @@ nav{
 li{
     display: inline-block;  
     line-height: 30px;
-    transition: 0.3s;
+    transition: all 0.1s;
 }
 
 li:hover{
     background-color: #a086ad;
     color: #fff;
+    border-radius: 3px;
 }
 
 li > a{
@@ -100,22 +102,46 @@ li > a:hover{
 }
 
 .hero-btn{
-    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #636363;
     font-family: 'Montserrat', sans-serif;
     /* color: #636363; */
     border-radius: 6px;
     margin-top: 100px;
-    height: 40px;
-    border: 3px solid #9f85ac;
-    background: #9fa0ac;
+    height: 70px;
+    width: 200px;
+    border: none;
+    background-color: #fff;
     opacity: 1;
-    padding: 0 30px 40px 30px;
+    /* padding: 50px 40px 50px 40px; */
     font-size: 1.5em;
-    line-height: 40px;
+    /* line-height: 40px; */
+    transition: all .1s;
 }
 
 .hero-btn:hover{
     cursor: pointer;
-    background-color: #9f85ac;
+    color: #fff;
+    background-color:#a086ad; 
 }
+
+.services{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    padding: 20px 10px; 
+}
+
+
+
+.service > img{
+    object-fit: cover;
+    max-width: 100%;
+}
+
+
 
