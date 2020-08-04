@@ -1,0 +1,119 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+
+.contact-social{
+    background-color: #9f85ac;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+}
+
+.social{
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.social-link{
+    display: inline-block;
+}
+
+.social-btn{
+    vertical-align: middle;
+}
+
+.social a{
+    text-decoration: none;
+    color: black;
+}
+
+.contact{
+    margin-right: 10px;
+    padding: 10px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f5f3f3;
+    height: 50px;
+    font-size: 1.5em;
+}
+
+.expand-more{
+    vertical-align: middle;
+}
+
+nav{
+    border-bottom: 3px solid #9f85ac;
+}
+
+.nav-link{
+    display: inline-block;
+    padding: 10px 30px; 
+}
+
+li{
+    display: inline-block;  
+    line-height: 30px;
+    transition: 0.3s;
+}
+
+li:hover{
+    background-color: #a086ad;
+    color: #fff;
+}
+
+li > a{
+    text-decoration: none;
+    color: #636363;
+}
+
+li > a:hover{
+    color: #fff;
+}
+
+.hero{
+    background: url("../assets/people-821624_1920.jpg");
+    background-position: -200px -400px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.hero-btn{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    /* color: #636363; */
+    border-radius: 6px;
+    margin-top: 100px;
+    height: 40px;
+    border: 3px solid #9f85ac;
+    background: #9fa0ac;
+    opacity: 1;
+    padding: 0 30px 40px 30px;
+    font-size: 1.5em;
+    line-height: 40px;
+}
+
+.hero-btn:hover{
+    cursor: pointer;
+    background-color: #9f85ac;
+}
+
