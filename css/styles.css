@@ -83,7 +83,9 @@ li > a:hover{
 
 .hero{
     background: url("../assets/people-821624_1920.jpg");
-    background-position: -200px -400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 450px;
     display: flex;
     flex-direction: column;
