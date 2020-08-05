@@ -37,7 +37,7 @@
                </a>
             </li>
             <li><a href="#" class="nav-link">Blog</a></li>
-            <li><input type="button" class="nav-button" value="Contactame"></li>
+            <li><input type="button" class="highlighted-button" value="Contactame"></li>
 
         </ul>
     </nav>
@@ -62,7 +62,7 @@
             </div>
         </div>
         <div class="back-img">
-            <img src="assets/helena-lopes-PGnqT0rXWLs-unsplash-cropped.jpg" class="parallax-img" alt="">
+            <img src="assets/andre-hunter-p-I9wV811qk-unsplash.jpg" class="parallax-img" alt="">
             
         </div>
         <div class="services">
@@ -93,10 +93,23 @@
             </div>
            
     </main>
+    <footer class="footer">
+        <button class="footer-button highlighted-button">Pedí un turno</button>
+        <button class="footer-button highlighted-button">Contactame</button>
+        <div class="footer-social social">
+            <a href="#" class="social-link"><i class="fab fa-facebook fa-lg social-icon"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin fa-lg social-icon"></i></a>
+        </div>
+        <p><a href="#" class="chivo">Website By Alan Mathiasen</a></p>
+    </footer>
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
     <script>
         let image = document.getElementsByClassName("parallax-img");
-        new simpleParallax(image);
+        new simpleParallax(image, {
+            scale: 1.5
+        });
     </script>
 </body>
 </html>
