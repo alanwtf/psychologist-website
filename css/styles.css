@@ -130,10 +130,13 @@ li > a{
 
 .dropdown-list{
     display: none;
+    width: 180%;
     position: absolute;
     background-color: #f5f3f3;
     top: 50px;
+    left: -20%;
     transition: ease 3s;
+    border-radius: 0 0 3px 3px;
 }
 
 .dropdown-btn:hover .dropdown-list{
@@ -141,13 +144,14 @@ li > a{
 }
 
 .dropdown-item{
+    padding-right: 100px;
     width: 100%;
 }
 
 .dropdown-item a{
+    width: 150%;
     display: block;
     padding: 10px 20px;
-    text-align: center;
     color: #636363 !important;
 }
 
