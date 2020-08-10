@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lemonada&display=swap" rel="stylesheet"> 
     <title>Lic. Maya Mathiasen</title>
 </head>
+
 <body>
     <header>
         <div class="contact-social">
@@ -30,21 +31,27 @@
     <nav>
         <div><a href="#" class="nav-link"><img src="assets/realLogo.png" alt="" id="logo"></a></div>
         <ul class="nav-links">
-            <li><a href="#" class="nav-link">Inicio</a></li>
-            <li><a href="#" class="nav-link">Sobre mi</a></li>
-            <li>
-                <a href="#" class="nav-link">
-                Servicios <i class="fas fa-chevron-down fa-sm arrow-icon"></i>
-               </a>
+            <li class="nav-btn"><a href="index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-btn"><a href="#" class="nav-link">Sobre mi</a></li>
+            <li class="dropdown-btn nav-btn">
+                <a href="" class="nav-link">Servicios <i class="fas fa-chevron-down fa-sm arrow-icon"></i></a>
+                    <ul class="dropdown-list">
+                        <li class="dropdown-item"><a href="#">Servicio 1</a></li>
+                        <li class="dropdown-item"><a href="#">Servicio 2</a></li>
+                        <li class="dropdown-item"><a href="#">Servicio 3</a></li>
+                        <li class="dropdown-item"><a href="#">Servicio 4</a></li>
+                        <li class="dropdown-item"><a href="#">Servicio 5</a></li>
+                        <li class="dropdown-item"><a href="#">Servicio 6</a></li>
+                    </ul>
             </li>
-            <li><a href="#" class="nav-link">Blog</a></li>
-            <li><input type="button" class="highlighted-button" value="Consultas"></li>
+            <li class="nav-btn"><a href="#" class="nav-link">Blog</a></li>
+            <li><input type="button" class="highlighted-button nav-btn" value="Consultas"></li>
 
         </ul>
     </nav>
     <main>
         <div class="hero">
-            <h1 class="hero-title"><q>"Si dominamos nuestra mente, vendra la felicidad."</q></h1>
+            <h1 class="hero-title"><q>"Si dominamos nuestra mente, vendrá la felicidad."</q></h1>
             <span class="quote-author">Dalai Lama</span>
             <!-- <button class="hero-btn">Contactame</button> -->
             <input type="button" value="Contactame" class="hero-btn">

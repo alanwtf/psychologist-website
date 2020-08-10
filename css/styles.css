@@ -68,19 +68,13 @@ nav{
     padding-right: 20px;   
 }
 
-.expand-more{
-    vertical-align: middle;
-}
-
-
-
 .nav-link{
     display: inline-block;
     padding: 10px 30px; 
 }
 
 li{
-    display: inline-block;  
+    display: inline-block;
     line-height: 30px;
     transition: all 0.3s;
 }
@@ -91,14 +85,16 @@ li:hover{
     border-radius: 3px;
 }
 
+li:hover a{
+    color: #fff;
+}
+
 li > a{
     text-decoration: none;
     color: #636363;
 }
 
-li > a:hover{
-    color: #fff;
-}
+
 
 .arrow-icon{
     padding-left: 3px;
@@ -126,6 +122,37 @@ li > a:hover{
     cursor: pointer;
     color: #fff;
     background-color:#a086ad; 
+}
+
+.dropdown-btn{
+    position: relative;
+}
+
+.dropdown-list{
+    display: none;
+    position: absolute;
+    background-color: #f5f3f3;
+    top: 50px;
+    transition: ease 3s;
+}
+
+.dropdown-btn:hover .dropdown-list{
+    display: block;
+}
+
+.dropdown-item{
+    width: 100%;
+}
+
+.dropdown-item a{
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    color: #636363 !important;
+}
+
+.dropdown-item a:hover{
+    color: #fff !important;
 }
 
 .hero{
