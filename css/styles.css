@@ -60,6 +60,7 @@ nav{
     height: 80px;
     font-size: 1.1em;
     align-items: center;
+    z-index: 1000;
 }
 
 .nav-links{
@@ -141,13 +142,21 @@ li > a:hover{
 }
 
 .hero-title{
+    font-family: 'Lemonada', sans-serif !important;
     color: #fff;
-    font-size: 4em;
+    font-size: 2.8em;
     font-weight: 400;
     text-align: center;
+    line-height: 1.2em;
     width: 60%;
-    padding-top: 30px;
-    font-family: 'Lemonada', sans-serif !important;
+    
+}
+
+.quote-author{
+    margin-left: 47%;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 600;
 }
 
 .hero-btn{
@@ -177,11 +186,9 @@ li > a:hover{
 }
 
 .presentation{
-    margin: 0 100px;
+    margin: 50px 100px 80px 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 30px;
-    padding-top: 50px;
     grid-gap: 50px;
 }
 
@@ -227,67 +234,84 @@ li > a:hover{
 }
 
 .parallax-img{
-    width: 100%;
-    height: auto;
-    z-index: -1;
+    max-width: 100%;
+
 }
 
 .services{
     padding: 50px 100px 250px 100px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 120px 1fr 1fr;
     grid-gap: 20px;
     width: 100%;
+    /* margin-bottom: 20px; */
     /* padding: 20px 30px;  */
    
 }
 
 .services-title{
     font-family: "Dancing Script", sans-serif;
-    font-size: 3em;
+    font-size: 5em;
+    text-decoration: underline;
     color: #9f85ac;
     grid-column: 1 / -1;
     align-self: center;
     text-align: center;
-    padding-bottom: 10px;
+    /* margin-top: 30px; */
+    padding-bottom: 30px;
 }
 
 .service-item{
     /* padding: 20px; */
+    justify-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 3px solid #a086ad;
+    border: 3px solid rgba(0,0,0,.3);
     border-radius: 5px;
-    padding: 10px 0; 
+    width: 80%;
+    padding: 20px;
+    transition: transform .3s;
+    margin-bottom: 20px;
 }
 
 .service-item:hover{
     background-color: #f5f3f3;
     cursor: pointer;
-
+    transform: scale(1.051);
 }
 
-.service{
+.service-wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.service > p{
+.service-wrapper > p{
     text-align: center;
 }
 
 .service-title{
     text-align: center;
+    font-size: 1.5em;
+    /* border-top: 1px solid rgba(0,0,0,.3); */
+    padding-top: 1em;
 }
 
 .rounded-img{
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    border-radius: 5px;
     object-fit: cover;
-    border: 4px solid #9f85ac;
+    border-bottom: 1px solid rgba(0,0,0,.3)
+    /* border: 4px solid #f5f3f3; */
+    /* padding-bottom: 1em; */
+}
+
+.service-img-wrapper{
+    padding-bottom: 1em;
+    border-bottom: 2px solid rgba(0,0,0,.3);
 }
 
 .service-img{
@@ -297,11 +321,11 @@ li > a:hover{
     transition: linear .2s;
 }
 
-.service-img:hover{
+/* .service-img:hover{
     cursor: pointer;
     bottom: 3px;
     box-shadow: 0 3px 3px rgba(0,0,0,.6);
-}
+} */
 
 .footer{
     display: flex;
