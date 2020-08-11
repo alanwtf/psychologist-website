@@ -427,9 +427,20 @@ li > a{
 
 /* Large devices (desktops, 992px and down)*/
 @media (max-width: 992px) {
-    
-}
-@media(max-width: 850px){
+    .secondary{
+        display: none;
+    }
+
+    .toggle{
+        display: inline-block;
+        padding: 0 10px;
+    }
+    .toggle:hover{
+        color: #636363;
+        background-color: #f5f3f3;
+        cursor: pointer;
+    }
+
     .presentation{
         grid-template-columns: 1fr;
     }
@@ -438,10 +449,14 @@ li > a{
         grid-template-columns: 1fr 1fr;
     }
 }
-}
+
 
 /* Medium devices (tablets, 768px and up)*/
-@media (max-width: 768px) { 
+@media all and (max-width: 768px) { 
+    .social{
+        font-size: .9em;
+    }
+
     .secondary{
         display: none;
     }
@@ -458,8 +473,8 @@ li > a{
 
     .hero{
         height: 400px;
-        background-position: -600px 0;
-        
+        background-position: -500px 0;
+
     }
 
     .hero-title{
@@ -478,7 +493,7 @@ li > a{
 
 
 /* Small devices (landscape phones, 576px and down)*/
-@media (max-width: 576px) { 
+@media all and (max-width: 576px) { 
     body{
         font-size: 74%;
     }
@@ -527,7 +542,7 @@ li > a{
     }
 
     .hero{
-        background-position: -800px 0;
+        background-position: -700px 0;
     }
 
     .hero-btn{
