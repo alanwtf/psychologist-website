@@ -29,11 +29,11 @@
         </div>
     </header>
     <nav>
-        <div><a href="#" class="nav-link"><img src="assets/realLogo.png" alt="" id="logo"></a></div>
+        <div class="logo-img"><a href="#" class="nav-link"><img src="assets/realLogo.png" alt="" id="logo"></a></div>
         <ul class="nav-links">
-            <li class="nav-btn"><a href="index.html" class="nav-link">Inicio</a></li>
-            <li class="nav-btn"><a href="#" class="nav-link">Sobre mi</a></li>
-            <li class="dropdown-btn nav-btn">
+            <li class="nav-btn secondary"><a href="index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-btn secondary"><a href="#" class="nav-link">Sobre mi</a></li>
+            <li class="dropdown-btn nav-btn secondary">
                 <a href="" class="nav-link">Servicios <i class="fas fa-chevron-down fa-sm arrow-icon"></i></a>
                     <ul class="dropdown-list">
                         <li class="dropdown-item"><a href="#">Terapia Individual</a></li>
@@ -44,9 +44,9 @@
                         <li class="dropdown-item"><a href="#">Terapia Internacional</a></li>
                     </ul>
             </li>
-            <li class="nav-btn"><a href="#" class="nav-link">Blog</a></li>
+            <li class="nav-btn secondary"><a href="#" class="nav-link">Blog</a></li>
             <li><input type="button" class="highlighted-button nav-btn" value="Consultas"></li>
-
+            <li class="toggle"><i class="fa fa-bars fa-lg"></i></li>
         </ul>
     </nav>
     <main>
@@ -58,7 +58,7 @@
         </div>
         <div class="presentation">
             <div class="presentation-img">
-                <img src="assets/fotito.jpg" alt="">
+                <img src="assets/libro.jpg" alt="">
             </div>
             <div class="presentation-txt">
                 <h1 class="pres-title">El primer paso hace la diferencia entre quedarte donde estas y comenzar a avanzar</h1>
@@ -73,19 +73,12 @@
         </div>
 
         <div class="back-img">
-            <img src="assets/couch.jpg" class="parallax-img" alt=""> 
+            <img src="assets/sillon.jpg" class="parallax-img" alt=""> 
         </div>
         
         <div class="services">
             <h1 class="services-title">Servicios</h1>
-            <div class="service-item" onclick="location.href='terapia-internacional.html';">
-                <div class="service-wrapper">
-                    <div class="service-img-wrapper">
-                        <img src="assets/travel-terapy.jpg" alt="" class="service-img rounded-img">
-                    </div>
-                    <h1 class="service-title">Terapia Internacional</h1> 
-                </div>
-            </div>
+            
             <div class="service-item">
                 <div class="service-wrapper">
                     <div class="service-img-wrapper">
@@ -94,6 +87,7 @@
                     <h1 class="service-title">Terapia Individual</h1> 
                 </div>
             </div>
+
             <div class="service-item">
                 <div class="service-wrapper">
                     <div class="service-img-wrapper">
@@ -102,6 +96,7 @@
                     <h1 class="service-title">Terapia de Pareja</h1> 
                 </div>
             </div>
+
             <div class="service-item">
                 <div class="service-wrapper">
                     <div class="service-img-wrapper">
@@ -110,6 +105,7 @@
                     <h1 class="service-title">Terapia Familiar</h1> 
                 </div>
             </div>
+
             <div class="service-item">
                 <div class="service-wrapper">
                     <div class="service-img-wrapper">
@@ -118,12 +114,22 @@
                     <h1 class="service-title">Terapia Online</h1> 
                 </div>
             </div>
+
             <div class="service-item">
                 <div class="service-wrapper">
                     <div class="service-img-wrapper">
                         <img src="assets/psi-simbolo.png" alt="" class="service-img rounded-img">
                     </div>
                     <h1 class="service-title">Terapia para Terapeutas</h1> 
+                </div>
+            </div>
+
+            <div class="service-item" onclick="location.href='terapia-internacional.html';">
+                <div class="service-wrapper">
+                    <div class="service-img-wrapper">
+                        <img src="assets/terapia-internacional.jpg" alt="" class="service-img rounded-img">
+                    </div>
+                    <h1 class="service-title">Terapia Internacional</h1> 
                 </div>
             </div>
 

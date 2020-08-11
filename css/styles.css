@@ -12,6 +12,10 @@ html {
     width: auto;
 }
 
+.logo-img{
+    /* order: 0; */
+}
+
 .contact-social{
     background-color: #9f85ac;
     color: #fff;
@@ -151,7 +155,7 @@ li > a{
     background-color: #f5f3f3;
     top: 50px;
     left: -20%;
-    transition: ease-in-out .3s;
+    transition: ease .4s;
     border-radius: 0 0 3px 3px;
 }
 
@@ -176,8 +180,13 @@ li > a{
     color: #fff !important;
 }
 
+.toggle{
+    display: none;
+
+}
+
 .hero{
-    background: url("../assets/test.jpg");
+    background: url("../assets/hero.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -213,6 +222,7 @@ li > a{
     align-items: center;
     color: #636363;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
     /* color: #636363; */
     border-radius: 6px;
     margin-top: 80px;
@@ -222,7 +232,6 @@ li > a{
     background-color: #fff;
     opacity: 1;
     /* padding: 50px 40px 50px 40px; */
-    font-size: 1.5em;
     /* line-height: 40px; */
     transition: all .1s;
 }
@@ -263,7 +272,7 @@ li > a{
 
 .welcome-btn{
     font-size: 1.4em;
-    width: 45%;
+    width: 300px;
     margin-top: 50px;
     justify-self: center;
     height: 70px;
@@ -399,4 +408,89 @@ li > a{
     color: rgba(0,0,0,.3);
 }
 
+/* !!!!!!!!!!!!!!! MEDIA QUERYS !!!!!!!!!!!!!!!!!!!!!*/
 
+
+
+@media all and (max-width: 950px){
+    .secondary{
+        display: none;
+    }
+
+    .toggle{
+        display: inline-block;
+        padding: 0 10px;
+    }
+    .toggle:hover{
+        color: #636363;
+        background-color: #f5f3f3;
+        cursor: pointer;
+    }
+
+    .hero{
+        height: 400px;
+    }
+
+    .hero-title{
+        font-size: 2em;
+    }
+
+    .presentation{
+        grid-template-columns: 1fr;
+    }
+
+    .services{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 750px){
+
+    .hero-btn{
+        height: 50px;
+        width: 145px;
+        font-size: 1.2em;
+    }
+
+    .services{
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px repeat(6, 1fr);
+        padding: 100px 50px;
+        grid-gap: 20px;
+    }
+
+    .service-item{
+        flex-direction: row;
+        justify-content: stretch;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .service-wrapper{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .service-img{
+        width: 80px;
+        height: 80px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .service-img-wrapper{
+        border-bottom: none;
+        margin: 0;
+        padding: 0;
+        padding-right: 20px;
+        border-right: 3px solid #9f85ac;
+    }
+
+    .service-title{
+        padding: 0;
+        padding-left: 20px;
+
+    }
+
+    
+}
