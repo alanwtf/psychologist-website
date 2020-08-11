@@ -15,10 +15,6 @@ body{
     width: auto;
 }
 
-.logo-img{
-    /* order: 0; */
-}
-
 .contact-social{
     background-color: #9f85ac;
     color: #fff;
@@ -203,7 +199,7 @@ li > a{
 .hero{
     background: url("../assets/hero.jpg");
     background-attachment: fixed;
-    background-position: center;
+    background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
@@ -453,6 +449,10 @@ li > a{
 
 /* Medium devices (tablets, 768px and up)*/
 @media all and (max-width: 768px) { 
+    .body{
+        font-size: 80%;
+    }
+
     .social{
         font-size: .9em;
     }
@@ -473,12 +473,11 @@ li > a{
 
     .hero{
         height: 400px;
-        background-position: -500px 0;
-
     }
 
     .hero-title{
         font-size: 2em;
+        width: 80%;
     }
 
     .presentation{
@@ -493,13 +492,14 @@ li > a{
 
 
 /* Small devices (landscape phones, 576px and down)*/
-@media all and (max-width: 576px) { 
+@media all and (max-width: 580px) { 
     body{
         font-size: 74%;
     }
 
     .social{
-        margin-top: 5px;
+        margin: 5px;
+        order: 1;
     }
 
     .social-link{
@@ -511,6 +511,8 @@ li > a{
     }
 
     .contact-social{
+        text-align: center;
+        justify-content: center;
         flex-wrap: wrap;
     }
 
@@ -526,6 +528,7 @@ li > a{
         display: inline-block;
         font-size: 1.1em;
         width: 100%;
+        text-align: center;
     }
 
     #logo{
@@ -541,8 +544,8 @@ li > a{
         display: none;
     }
 
-    .hero{
-        background-position: -700px 0;
+    .hero-title{
+        width: 90%;
     }
 
     .hero-btn{
