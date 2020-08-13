@@ -12,6 +12,10 @@ body{
     font-size: 100%;
 }
 
+#overflow{
+    overflow-x: hidden;
+}
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    HEADER/NAVBAR   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 #logo{
