@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="css/navbar-footer.css">
     <link rel="icon" href="assets/psi-simbolo-white-outline-5px.png
     " type="image/icon type">
     <link rel="stylesheet" href="css/styles.css">
@@ -30,23 +32,24 @@
         </div>
     </header>
     <nav>
-        <div class="logo-img"><a href="#" class="nav-link"><img src="assets/realLogo.png" alt="" id="logo"></a></div>
+        <div class="logo-img"><a href="index.html" class="nav-link"><img src="assets/realLogo.png" alt="" id="logo"></a></div>
         <ul class="nav-links">
-            <li class="nav-btn"><a href="index.html" class="nav-link">Inicio</a></li>
-            <li class="nav-btn"><a href="#" class="nav-link">Sobre mi</a></li>
+            <li class="nav-btn"><a href="index.html" class="nav-link active">Inicio</a></li>
+            <li class="nav-btn"><a href="about.html" class="nav-link">Sobre mi</a></li>
             <li class="nav-btn dropdown-btn">
-                <a href="" class="nav-link">Servicios <span class="none-mobile"><i class="fas fa-chevron-down fa-sm arrow-icon"></i></span></a>
+                <a href="servicios.html" class="nav-link">Servicios <span class="none-mobile"><i class="fas fa-chevron-down fa-sm arrow-icon"></i></span></a>
                     <ul class="dropdown-list">
-                        <li class="dropdown-item"><a href="#">Terapia Individual</a></li>
-                        <li class="dropdown-item"><a href="#">Terapia de Pareja</a></li>
-                        <li class="dropdown-item"><a href="#">Terapia Familiar</a></li>
-                        <li class="dropdown-item"><a href="#">Terapia Online</a></li>
-                        <li class="dropdown-item"><a href="#">Terapia para Terapeutas</a></li>
-                        <li class="dropdown-item"><a href="#">Terapia Internacional</a></li>
+                        <li class="dropdown-item"><a href="servicios/terapia-individual.html">Terapia Individual</a></li>
+                        <li class="dropdown-item"><a href="servicios/terapia-pareja.html">Terapia de Pareja</a></li>
+                        <li class="dropdown-item"><a href="servicios/terapia-familiar.html">Terapia Familiar</a></li>
+                        <li class="dropdown-item"><a href="servicios/terapia-online.html">Terapia Online</a></li>
+                        <li class="dropdown-item"><a href="servicios/terapia-terapeutas.html">Terapia para Terapeutas</a></li>
+                        <li class="dropdown-item"><a href="servicios/terapia-internacional.html">Terapia Internacional</a></li>
                     </ul>
             </li>
-            <li class="nav-btn"><a href="#" class="nav-link">Blog</a></li>
-            <li class="nav-btn"><input type="button" class="highlighted-button responsive-btn nav-link" value="Consultas"></li>
+            <li class="nav-btn"><a href="blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-btn"><a href="contacto.html" class="nav-link">Contacto</a></li>
+            
             <!-- <li class="toggle"><i class="fa fa-bars fa-lg"></i></li> -->
         </ul>
         <div class="burger">
@@ -60,7 +63,7 @@
             <h1 class="hero-title"><q>"Si dominamos nuestra mente, vendrá la felicidad."</q></h1>
             <span class="quote-author">Dalai Lama</span>
             <!-- <button class="hero-btn">Contactame</button> -->
-            <input type="button" value="Contactame" class="hero-btn">
+            <div><a href="contacto.html" class="hero-btn-link"><input type="button" value="Contactame" class="hero-btn"></a></div>
         </div>
         <div class="presentation">
             <div class="presentation-img">
@@ -74,7 +77,9 @@
                     conectarte de manera asertiva con el entorno, esencial para lograr un estado de salud y bienestar 
                     general que cambiará la forma en que percibes y te encuentras con la vida.
                 </p>
-                <button class="highlighted-button welcome-btn">Conoceme</button>
+                <a href="about.html" class="welcome-btn-link"><input type="button" value="Conoceme" class="highlighted-button welcome-btn"></a>
+                <!-- <a type="button" href="about.html" class="highlighted-button welcome-btn">Conoceme</a> -->
+                <!-- <button class="">Conoceme</button> -->
             </div>
         </div>
 
@@ -138,7 +143,7 @@
                     <h1 class="service-title">Terapia Internacional</h1> 
                 </div>
             </div>
-
+            
     </main>
     <footer class="footer">
         <button class="footer-button highlighted-button">Pedí un turno</button>
@@ -147,13 +152,21 @@
             <a href="#" class="social-link"><i class="fab fa-facebook fa-lg social-icon"></i></a>
             <a href="#" class="social-link"><i class="fab fa-linkedin fa-lg social-icon"></i></a>
             <a href="#" class="social-link"> <i class="fab fa-whatsapp fa-lg social-icon"></i></a>
-            <a href="#" class="social-link"><i class="fas fa-envelope fa-lg social-icon"></i></a>
+            <a href="#" class="social-link no-padding-right"><i class="fas fa-envelope fa-lg social-icon no-padding-right"></i></a>
         </div>
         <p><a href="#" class="chivo">Website By Alan Mathiasen</a></p>
     </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
-    <script src="scripts/script.js"></script>
 </div>
+<script src="scripts/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js">
+    
+</script>
+<script>
+    let image = document.querySelector('.parallax-img');
+    new simpleParallax(image, {
+        delay: .6,
+        scale: 1.2
+    });
+</script>
 </body>
 </html>

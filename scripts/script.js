@@ -7,20 +7,12 @@ const navSlide = () => {
         nav.classList.toggle('nav-active');
         //Burger animation
         burger.classList.toggle('toggle');
-    });
-}
-
-const parallax = () => {
-    let image = document.querySelector('.parallax-img');
-    new simpleParallax(image, {
-        delay: .6,
-        scale: 1.2
+        console.log("HOLA");
     });
 }
 
 const app = () => {
     navSlide();
-    parallax();
 }
 
 app();
