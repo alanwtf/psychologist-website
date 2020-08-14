@@ -14,6 +14,8 @@ body{
 
 main{
     min-height: 500px;
+    width: 100%;
+    height: 100%;
 }
 
 #overflow{
@@ -28,7 +30,7 @@ main{
 
 
 #logo{
-    height: 35px;
+    height: 70px;
     width: auto;
 }
 
@@ -105,10 +107,9 @@ nav{
     justify-content: space-between;
     background-color: #f5f3f3;
     height: 80px;
-    /* height: 18vh; */
     font-size: 1.1em;
     align-items: center;
-    z-index: 1000;
+    z-index: 1000; 
 }
 
 .nav-links{
@@ -142,8 +143,6 @@ li:hover a{
 .dropdown-item.active > a{
     color: #fff !important;
 }
-
-
 
 li > a{
     text-decoration: none;
