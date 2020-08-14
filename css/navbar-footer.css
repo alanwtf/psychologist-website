@@ -30,7 +30,7 @@ main{
 
 
 #logo{
-    height: 70px;
+    height: 75px;
     width: auto;
 }
 
@@ -316,6 +316,18 @@ li > a{
     .nav-active{
         transform: translateX(0%);
     }
+
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+    
+    .toggle .line2{
+        visibility: hidden;
+    }
+    
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
     
     .nav-links a{
         width: 100%;
@@ -353,16 +365,6 @@ li > a{
 
     .social{
         font-size: .9em;
-    }
-
-    .toggle{
-        display: inline-block;
-        padding: 0 10px;
-    }
-    .toggle:hover{
-        color: #636363;
-        background-color: #f5f3f3;
-        cursor: pointer;
     }
 
     nav{
