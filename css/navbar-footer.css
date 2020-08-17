@@ -48,7 +48,7 @@ main{
 
 .social-link{
     display: inline-block;
-    font-size: 1.2em;
+    font-size: 1em;
     transition: ease-in-out .1s;
 }
 
@@ -322,7 +322,7 @@ li > a{
     }
     
     .toggle .line2{
-        visibility: hidden;
+        opacity: 0;
     }
     
     .toggle .line3{
