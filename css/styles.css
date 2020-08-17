@@ -452,5 +452,71 @@ br{
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! CONTACTO !!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 
+.contacto-wrapper{
+    margin: 4rem 10rem;
+}
+
+.contact-title{
+    font-size: 3rem;
+    text-align: left;
+    padding: 1rem 0 2rem 0;
+}
+
+.text{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+.contacto-text{
+    padding-top: 1rem;
+}
+
+.contacto-sociales{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3rem;
+    justify-content: space-around;
+    padding: 2rem 0;
+    /* background-color: red; */
+    border-top: 1px solid rgba(0,0,0,.2);
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.contacto-sociales a{
+    color: #8c709b;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contactame{
+    padding: 4rem 0 2rem 0;
+    font-size: 2.8rem;
+    text-align: left;
+
+}
+
+.contact-form label{
+    margin-bottom: .3rem;
+}
+
+.contact-form input, .contact-form label{
+    font-size: 1.4rem;
+    display: block;
+}
+
+.contact-form input, .contact-form textarea{
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+.campo-obligatorio{
+    color: red;
+}
+
+.form-btn{
+    font-size: 1.4rem !important;
+    width: 20% !important;
+}
 
 

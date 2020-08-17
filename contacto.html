@@ -58,7 +58,29 @@
     </nav>
     <main>
         <div class="contacto-wrapper">
-            <h1 class="pres-title">Contacto</h1>
+            <h1 class="pres-title contact-title">Contacto</h1>
+            <p class="text contacto-text">Podés contactarme a través de los siguientes canales, o llenando el formulario
+                al final de la página.
+            </p>
+            <div class="contacto-sociales">
+                <a href="#" class="social-link social-icon"><i class="fas fa-map-marker-alt fa-lg "></i><span class=""> San Luis 1274, MDP</span> </a>
+                <a href="https://wa.me/542235187622" class="social-link social-icon"><i class="fab fa-whatsapp fa-lg"></i><span class=""> +54 223 518-7622</span></a>
+                <a href="#" class="social-link social-icon"><i class="fas fa-envelope fa-lg "></i><span class=""> mdmathiasen@outlook.com <span class="yes-mobile">   </span></span></a>
+            </div>
+
+            <h3 class="pres-title contactame">Contactame hoy!</h3>
+
+            <form action="" class="contact-form">
+                <label for="name">Nombre <span class="campo-obligatorio">*</span> </label>
+                <input type="text" name="name" id="name">
+                <label for="email">Correo Electrónico <span class="campo-obligatorio">*</span></label>
+                <input type="email" name="email" id="email">
+                <label for="telefono">Teléfono</label>
+                <input type="text" name="telefono" id="telefono">
+                <label for="text">Mensaje</label>
+                <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                <input type="button" value="Enviar!" class="highlighted-button form-btn">
+            </form>
         </div>
     </main>
     <footer class="footer">
