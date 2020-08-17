@@ -75,7 +75,7 @@
 .pres-title{
     font-family: "Dancing Script", sans-serif;
     font-size: 2.6em;
-    color: #9f85ac;
+    color: #8c709b;
     text-align: center;
     margin-right: 5px;
     /* padding-bottom: .5em; */
@@ -322,3 +322,135 @@
 
     }
 }
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!! ABOUT PAGE !!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+.about-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 50px;
+    margin: 0 6rem;
+    margin-left: 8rem;
+    font-size: 1.4rem;
+}
+
+.txt-wrapper{
+    grid-column: 2 / -1;
+    margin-top: 50px;
+}
+
+.about-me-title{
+    text-align: start;
+    padding-bottom: 30px;
+    font-size: 2.2em;
+    /* padding-left: 50px; */
+    /* grid-column: 2 / -1; */
+}
+
+.img-wrapper{
+    padding-left: 50px;
+    padding-top: 50px;
+    justify-self: center;
+    grid-row: 1/-1;
+}
+
+.profile-img{
+    max-width: 250px;
+    border-radius: 50%;
+    border: 3px solid #9f85ac;
+}
+
+.matricula-nm{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.about-me-txt{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    padding-right: 2rem;
+    /* grid-column: 2 / -1; */
+}
+
+br{
+    margin-bottom: 1rem;
+}
+
+.list-br{
+    margin-bottom: .5rem;
+}
+
+.credenciales-title{
+    font-size: 2.0em;
+}
+
+.credenciales-list{
+    padding-left: 3rem;
+    grid-column: 1 / -1;
+    list-style-type: disc;
+    margin-bottom: 2rem;
+}
+
+.credenciales-list li{
+    padding-top: .5rem;
+    padding-bottom: 1.3rem;
+    padding-left: 1.5rem;
+}
+
+.credenciales-list > li:first-child{
+    padding-top: 0;
+}
+
+
+
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!! SERVICIOS PAGE !!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.servicios-wrapper{
+    margin: 0 8rem;
+    margin-bottom: 4rem;
+}
+
+.servicios-title{
+    text-align: start;
+    padding: 1.5rem 0;
+    font-size: 3.2em;
+    grid-column: 1/-1;
+}
+
+.serv-txt-wrapper{
+    grid-column: 1/-1;
+
+}
+
+.servicios-desc{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+.lista-patologias{
+    list-style-type: disc;
+    padding-left: 2rem;
+    font-size: 1.4rem;
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! CONTACTO !!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+
