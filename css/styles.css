@@ -197,11 +197,236 @@
     transition: linear .2s;
 }
 
+
+.banner-img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!! ABOUT PAGE !!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+.about-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 50px;
+    font-size: 1.4em;
+    line-height: 2.3em;
+}
+
+.txt-wrapper{
+    grid-column: 2 / -1;
+    margin-top: 50px;
+    line-height: 2.3em;
+}
+
+.about-me-title{
+    text-align: start;
+    padding-bottom: 30px;
+    font-size: 2.2em;
+   
+}
+
+.img-wrapper{
+    padding-left: 50px;
+    padding-top: 50px;
+    justify-self: center;
+    grid-row: 1/-1;
+}
+
+.profile-img{
+    display: block;
+    max-width: 250px;
+    border-radius: 50%;
+    border: 3px solid #9f85ac;
+    margin: 0 auto;
+}
+
+.matricula-nm{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.about-me-txt{
+    padding-right: 2em;
+}
+
+.break{
+    display: block;
+    margin-top: 1.5em;
+}
+
+.list-br{
+    margin-bottom: .5em;
+}
+
+.credenciales-title{
+    font-size: 2em;
+}
+
+.credenciales-list{
+    padding-left: 3em;
+    grid-column: 1 / -1;
+    list-style-type: disc;
+    margin-bottom: 2em;
+}
+
+.credenciales-list li{
+    padding-top: .5em;
+    padding-bottom: 1.3em;
+    padding-left: 1.5em;
+}
+
+.credenciales-list > li:first-child{
+    padding-top: 0;
+}
+
+
+
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!! SERVICIOS PAGE !!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.main-wrapper{
+    margin: 2rem 8rem;
+    margin-bottom: 4rem;
+}
+
+.servicios-title{
+    text-align: start;
+    padding: 1.5rem 0 2.5rem 0;
+    font-size: 3.2em;
+    grid-column: 1/-1;
+}
+
+.serv-txt-wrapper{
+    grid-column: 1/-1;
+    line-height: 2.2em;
+
+}
+
+.servicios-desc{
+    font-size: 1.4em;
+    /* line-height: 1.4rem; */
+}
+
+.lista-patologias{
+    list-style-type: disc;
+    padding-left: 2rem;
+    font-size: 1.4em;
+}
+
+.services-page{
+    padding-top: 0;
+}
+
+.h2-services{
+    font-size: 3em;
+    text-align: left;
+    text-decoration: none;
+}
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! CONTACTO !!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+.contacto-wrapper{
+    margin: 4rem 10rem;
+}
+
+.contact-title{
+    font-size: 4rem;
+    text-align: left;
+    padding: 2rem 0 4rem 0;
+}
+
+.text{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.contacto-text{
+    padding-top: 1rem;
+}
+
+.contacto-sociales{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 1.2fr;
+    margin-top: 3rem;
+    justify-content: space-around;
+    padding: 2rem 0;
+    /* background-color: red; */
+    border-top: 1px solid rgba(0,0,0,.2);
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.contacto-sociales a{
+    color: #8c709b;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contactame{
+    padding: 4rem 0 2rem 0;
+    font-size: 2.8rem;
+    text-align: left;
+
+}
+
+.contact-form label{
+    margin-bottom: .3rem;
+}
+
+.contact-form input, .contact-form label{
+    font-size: 1.4rem;
+    display: block;
+}
+
+.contact-form input, .contact-form textarea{
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+.campo-obligatorio{
+    color: red;
+}
+
+.form-btn{
+    font-size: 1.4rem !important;
+    width: 120px !important;
+    height: 50px;
+    line-height: 22px;
+}
+
+.map{
+    margin-bottom: 3rem;
+}
+
+
+
+
+
 /* !!!!!!!!!!!!!!! MEDIA QUERYS !!!!!!!!!!!!!!!!!!!!!*/
 
 
 /* Large devices (desktops, 992px and down)*/
 @media (max-width: 992px) {
+
+    body{
+        font-size: 90%;
+    }
 
     .highlighted-button{
         width: 100%;
@@ -225,11 +450,35 @@
         vertical-align: middle;
     }
 
+    .main-wrapper{
+        margin: 1.5rem 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .about-wrapper{
+        grid-template-columns: 1fr;
+    }
+
+    .txt-wrapper{
+        grid-column: 1 / -1;
+    }
+
+    .contacto-sociales{
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        text-align: center;
+    }
+
+
 }
 
 
 /* Medium devices (tablets, 768px and up)*/
 @media all and (max-width: 768px) { 
+
+    body{
+        font-size: 80%;
+    }
 
     .hero{
         height: 400px;
@@ -247,12 +496,30 @@
     .services{
         grid-template-columns: 1fr 1fr;
     }
+
+    .main-wrapper{
+        margin: 1.5rem 2rem;
+        margin-bottom: 2rem;
+    }
     
+    .about-wrapper{
+        grid-template-columns: 1fr;
+    }
+
+    .img-wrapper{
+        padding: 0;
+        justify-self: center;
+        margin-top: 20px;
+    }
 }
 
 
 /* Small devices (landscape phones, 576px and down)*/
 @media all and (max-width: 580px) { 
+
+    body{
+        font-size: 70%;
+    }
 
     .hero-title{
         width: 90%;
@@ -321,211 +588,13 @@
         padding-left: 15px;
 
     }
+
+    .main-wrapper{
+        margin: 1.5rem 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-wrapper{
+        grid-template-columns: 1fr;
+    }
 }
-
-
-
-
-/* !!!!!!!!!!!!!!!!!!!!! ABOUT PAGE !!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-
-.about-wrapper{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-gap: 50px;
-    margin: 0 6rem;
-    margin-left: 8rem;
-    font-size: 1.4rem;
-    line-height: 2.3rem;
-}
-
-.txt-wrapper{
-    grid-column: 2 / -1;
-    margin-top: 50px;
-    line-height: 2.3rem;
-}
-
-.about-me-title{
-    text-align: start;
-    padding-bottom: 30px;
-    font-size: 2.2em;
-    /* padding-left: 50px; */
-    /* grid-column: 2 / -1; */
-}
-
-.img-wrapper{
-    padding-left: 50px;
-    padding-top: 50px;
-    justify-self: center;
-    grid-row: 1/-1;
-}
-
-.profile-img{
-    max-width: 250px;
-    border-radius: 50%;
-    border: 3px solid #9f85ac;
-}
-
-.matricula-nm{
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    padding-top: 10px;
-    font-size: 1.1rem;
-    font-weight: 600;
-}
-
-.about-me-txt{
-    font-size: 1.4rem;
-    padding-right: 2rem;
-    /* grid-column: 2 / -1; */
-}
-
-.break{
-    display: block;
-    margin-top: 1.5rem;
-}
-
-.list-br{
-    margin-bottom: .5rem;
-}
-
-.credenciales-title{
-    font-size: 2.0em;
-}
-
-.credenciales-list{
-    padding-left: 3rem;
-    grid-column: 1 / -1;
-    list-style-type: disc;
-    margin-bottom: 2rem;
-}
-
-.credenciales-list li{
-    padding-top: .5rem;
-    padding-bottom: 1.3rem;
-    padding-left: 1.5rem;
-}
-
-.credenciales-list > li:first-child{
-    padding-top: 0;
-}
-
-
-
-
-
-
-
-
-/* !!!!!!!!!!!!!!!!!!!!! SERVICIOS PAGE !!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-.servicios-wrapper{
-    margin: 0 8rem;
-    margin-bottom: 4rem;
-}
-
-.servicios-title{
-    text-align: start;
-    padding: 1.5rem 0;
-    font-size: 3.2em;
-    grid-column: 1/-1;
-}
-
-.serv-txt-wrapper{
-    grid-column: 1/-1;
-    line-height: 2.2rem;
-
-}
-
-.servicios-desc{
-    font-size: 1.4rem;
-    /* line-height: 1.4rem; */
-}
-
-.lista-patologias{
-    list-style-type: disc;
-    padding-left: 2rem;
-    font-size: 1.4rem;
-}
-
-
-
-
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! CONTACTO !!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-
-.contacto-wrapper{
-    margin: 4rem 10rem;
-}
-
-.contact-title{
-    font-size: 4rem;
-    text-align: left;
-    padding: 2rem 0 4rem 0;
-}
-
-.text{
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-}
-
-.contacto-text{
-    padding-top: 1rem;
-}
-
-.contacto-sociales{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 3rem;
-    justify-content: space-around;
-    padding: 2rem 0;
-    /* background-color: red; */
-    border-top: 1px solid rgba(0,0,0,.2);
-    border-bottom: 1px solid rgba(0,0,0,.2);
-}
-
-.contacto-sociales a{
-    color: #8c709b;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.contactame{
-    padding: 4rem 0 2rem 0;
-    font-size: 2.8rem;
-    text-align: left;
-
-}
-
-.contact-form label{
-    margin-bottom: .3rem;
-}
-
-.contact-form input, .contact-form label{
-    font-size: 1.4rem;
-    display: block;
-}
-
-.contact-form input, .contact-form textarea{
-    width: 80%;
-    margin-bottom: 1rem;
-}
-
-.campo-obligatorio{
-    color: red;
-}
-
-.form-btn{
-    font-size: 1.4rem !important;
-    width: 120px !important;
-    height: 50px;
-    line-height: 25px;
-}
-
-.map{
-    margin-bottom: 3rem;
-}
-
-
