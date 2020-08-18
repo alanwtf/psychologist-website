@@ -336,11 +336,13 @@
     margin: 0 6rem;
     margin-left: 8rem;
     font-size: 1.4rem;
+    line-height: 2.3rem;
 }
 
 .txt-wrapper{
     grid-column: 2 / -1;
     margin-top: 50px;
+    line-height: 2.3rem;
 }
 
 .about-me-title{
@@ -375,13 +377,13 @@
 
 .about-me-txt{
     font-size: 1.4rem;
-    line-height: 1.4rem;
     padding-right: 2rem;
     /* grid-column: 2 / -1; */
 }
 
-br{
-    margin-bottom: 1rem;
+.break{
+    display: block;
+    margin-top: 1.5rem;
 }
 
 .list-br{
@@ -432,12 +434,13 @@ br{
 
 .serv-txt-wrapper{
     grid-column: 1/-1;
+    line-height: 2.2rem;
 
 }
 
 .servicios-desc{
     font-size: 1.4rem;
-    line-height: 1.4rem;
+    /* line-height: 1.4rem; */
 }
 
 .lista-patologias{
@@ -457,14 +460,14 @@ br{
 }
 
 .contact-title{
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: left;
-    padding: 1rem 0 2rem 0;
+    padding: 2rem 0 4rem 0;
 }
 
 .text{
     font-size: 1.4rem;
-    line-height: 1.4rem;
+    line-height: 1.8rem;
 }
 
 .contacto-text{
@@ -516,7 +519,13 @@ br{
 
 .form-btn{
     font-size: 1.4rem !important;
-    width: 20% !important;
+    width: 120px !important;
+    height: 50px;
+    line-height: 25px;
+}
+
+.map{
+    margin-bottom: 3rem;
 }
 
 
