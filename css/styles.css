@@ -241,7 +241,7 @@
     float: left;
     width: 350px;
     height: auto;
-    margin: 40px;
+    margin: 30px;
     margin-left: 10px;
     margin-top: 10px;
     justify-self: center;
@@ -251,7 +251,7 @@
 
 .profile-img{
     display: block;
-    max-width: 100%;
+    max-width: 90%;
     /* border-radius: 50%;
     border: 3px solid #9f85ac; */
     margin: 0 auto;
