@@ -529,11 +529,11 @@
         grid-template-columns: 1fr;
     }
 
-    .img-wrapper{
+    /* .img-wrapper{
         padding: 0;
         justify-self: center;
         margin-top: 20px;
-    }
+    } */
 
     .h1-title{
         font-size: 45px;
@@ -541,6 +541,17 @@
 
     .text{
         font-size: 20px;
+    }
+
+    .img-wrapper{
+        /* float: none; */
+        display: block;
+        margin: 10px auto 30px auto;
+        width: 100%;
+    }
+
+    .profile-img{
+        width: 90%;
     }
 }
 
@@ -635,5 +646,9 @@
 
     .text{
         font-size: 18px;
+    }
+
+    .img-wrapper{
+        margin: 20px auto 30px auto;
     }
 }
