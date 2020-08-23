@@ -34,6 +34,12 @@ main{
     width: auto;
 }
 
+.hidden{
+    position: absolute;
+    clip: rect(1px 1px 1px 1px); /* IE6 & 7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
 .contact-social{
     background-color: #9f85ac;
     font-weight: 400;
