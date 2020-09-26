@@ -30,7 +30,7 @@ main{
 
 
 #logo{
-    height: 65px;
+    height: 55px;
     width: auto;
 }
 
@@ -356,7 +356,7 @@ nav li > a{
     }
     
     #logo{
-        height: 60px;
+        height: 55px;
     }
 
     .none-mobile{
@@ -428,7 +428,7 @@ nav li > a{
     }
 
     #logo{
-        height: 45px;
+        height: 40px;
     }
 
     .footer-button{

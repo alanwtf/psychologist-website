@@ -94,11 +94,11 @@
 }
 
 .welcome-btn{
-    font-size: 1.4em;
-    width: 300px;
+    font-size: 1.2em;
     margin-top: 50px;
     justify-self: center;
-    height: 70px;
+    /* height: 50px; */
+    padding: 10px 15px;
     vertical-align: middle;
 }
 
@@ -371,7 +371,7 @@
 } */
 
 .text{
-    font-size: 25px;
+    font-size: 20px;
     line-height: 30px !important;
 }
 
@@ -406,10 +406,11 @@
 
 .contact-form label{
     margin-bottom: .3em;
+    font-size: 20px;
 }
 
 .contact-form input, .contact-form label{
-    font-size: 1.4em;
+    
     display: block;
 }
 
@@ -418,8 +419,18 @@
     margin-bottom: 1em;
 }
 
-.campo-obligatorio{
-    color: red;
+.input-form{
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 2px 5px; 
+    box-shadow: none;
+
+}
+
+.input-form:focus{
+    border: 2px solid #8c709b;
 }
 
 .form-btn{
@@ -446,7 +457,7 @@
     .highlighted-button{
         width: 100%;
         border: none;
-        border-bottom: 2px solid #9f85ac;
+        border: 2px solid #9f85ac;
     }
     
     .presentation{
@@ -488,9 +499,7 @@
         font-size: 50px;
     }
 
-    .text{
-        font-size: 22px;
-    }
+   
 
 
 }
@@ -539,9 +548,7 @@
         font-size: 45px;
     }
 
-    .text{
-        font-size: 20px;
-    }
+    
 
     .img-wrapper{
         /* float: none; */
@@ -644,9 +651,7 @@
         font-size: 40px;
     }
 
-    .text{
-        font-size: 18px;
-    }
+
 
     .img-wrapper{
         margin: 20px auto 30px auto;
