@@ -19,4 +19,4 @@ if (isset($_POST['submit'])){
 }
 ?>
 
-Mensaje enviado correctamente! te estamos redireccionando.
+Mensaje enviado correctamente! Te estamos redireccionando.

@@ -356,6 +356,23 @@
 }
 
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! OBRAS SOCIALES !!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.obras-sociales{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
+}
+
+.obra-social{
+    justify-self: center;
+    align-self: center;
+}
+
+.obra-social img{
+    max-width: 100%;
+}
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! CONTACTO !!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
@@ -560,6 +577,10 @@
     .profile-img{
         width: 90%;
     }
+
+    .obras-sociales{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 
@@ -655,6 +676,10 @@
 
     .img-wrapper{
         margin: 20px auto 30px auto;
+    }
+
+    .obras-sociales{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
