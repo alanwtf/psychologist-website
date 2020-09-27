@@ -73,13 +73,13 @@
 
             <form action="contactform.php" method="POST" class="contact-form">
                 <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" class="input-form">
+                <input type="text" name="name" id="name" class="input-form" required>
                 <label for="email">Correo Electrónico</label>
-                <input type="email" name="email" id="email" class="input-form">
+                <input type="email" name="email" id="email" class="input-form" required>
                 <label for="subject">Asunto</label>
-                <input type="text" name="subject" id="subject" class="input-form">
+                <input type="text" name="subject" id="subject" class="input-form" required>
                 <label for="text">Mensaje</label>
-                <textarea name="text" id="text" cols="30" rows="10" class="input-form"></textarea>
+                <textarea name="text" id="text" cols="30" rows="10" class="input-form" required></textarea>
                 <input type="submit" name="submit" value="Enviar!" class="highlighted-button form-btn">
             </form>
         </div>
